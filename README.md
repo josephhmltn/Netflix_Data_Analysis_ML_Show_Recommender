@@ -1,7 +1,8 @@
 # Netflix Data Analysis
 
 ## Data Overview and Initial Exploration 🌟
-- **Dataset**: Contains Netflix titles with attributes like year, rating, duration, etc. Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)
+- **Dataset**: Contains Netflix titles with attributes like year, rating, duration, etc.
+-- *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
 - **Initial Observation**: Identified data types and missing values.
 
 ## Data Cleaning and Transformation 🧼
