@@ -15,37 +15,37 @@
 - **Histograms**: Illustrated distribution of IMDb ratings and vote counts.
 - **Adjustments**: Utilized log scale for clarity in vote distribution.
 
-![](images\rating_dist.png)
+![](images/rating_dist.png)
 
 ### Genre Analysis 🎭
 - **Bar Chart**: Showed frequency of top 10 genres.
 - **Insight**: Identified most prevalent genres on Netflix.
 
-![](images\genre_top10.png)
+![](images/genre_top10.png)
 
 ### Yearly Trends Analysis 📅
 - **Line Graphs**: Analyzed trends in number of releases and average ratings (2000-2022).
 - **Improved Legibility**: Adjusted x-axis labels for better clarity.
 
-![](images\releases_per_year.png)
+![](images/releases_per_year.png)
 
 ### Rating vs. Votes Correlation 📉
 - **Scatterplot**: Explored the relationship between IMDb ratings and vote counts.
 - **Finding**: A weak positive correlation observed.
 
-![](images\scatplot_ratings_votes.png)
+![](images/scatplot_ratings_votes.png)
 
 ### Duration Analysis ⏳
 - **Histogram**: Investigated distribution of show/movie durations.
 - **Color Palette**: Consistently used 'Blues_r' as per preference.
 
-![](images\duration_dist_minutes.png)
+![](images/duration_dist_minutes.png)
 
 ### Word Clouds 🌬️
 - **Descriptions and Genres**: Created word clouds to visualize common words and genres.
 - **Refinement**: Excluded filler words for more accurate representation.
 
-![](images\wordcloud_description.png)
+![](images/wordcloud_description.png)
 
 ## Predictive Modeling: Recommendation System 🤖
 
