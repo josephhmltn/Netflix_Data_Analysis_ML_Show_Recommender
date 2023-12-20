@@ -15,7 +15,7 @@
 - **Histograms**: Illustrated distribution of IMDb ratings and vote counts.
 - **Adjustments**: Utilized log scale for clarity in vote distribution.
 
-![](images/rating_dist.png)
+![](images/ratings_dist.png)
 
 ### Genre Analysis 🎭
 - **Bar Chart**: Showed frequency of top 10 genres.
