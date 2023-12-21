@@ -3,9 +3,19 @@
 ## Dataset Processing for Analysis
 
 ### Data Overview and Initial Exploration 🌟
-- **Dataset**: Contains Netflix titles with attributes like year, rating, duration, etc.
-  - *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
+- **Dataset**: Contains Netflix titles with attributes:
+  - **Title**: Name of the show or movie.
+  - **Year**: Release year or the range of years it was active.
+  - **Certificate**: Content rating.
+  - **Duration**: Length of the show or movie.
+  - **Genre**: Category or type of show or movie.
+  - **Rating**: IMDb rating.
+  - **Description**: Brief summary.
+  - **Stars**: Main cast.
+  - **Votes**: Number of votes on IMDb.
+    - *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
 - **Initial Observation**: Identified data types and missing values.
+- **Initial Dataset**: 9,958 rows
 
 ### Data Cleaning 🧹
 - **Missing Values**: Focused on columns 'votes' and 'rating'. Rows with missing values in these columns were dropped.
@@ -28,6 +38,7 @@
 ### Dataset After Cleaning and Transformation 🌟
 - **Refined Data**: The dataset now had cleaner and more consistent data, suitable for in-depth analysis.
 - **Structure**: Retained essential features with corrected data types and without missing values in critical columns.
+- **Resulting Dataset**: 8,784 rows
 
 ## Exploratory Data Analysis (EDA) 🔍
 
