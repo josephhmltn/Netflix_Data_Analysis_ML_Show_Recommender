@@ -13,9 +13,10 @@
   - **Description**: Brief summary.
   - **Stars**: Main cast.
   - **Votes**: Number of votes on IMDb.
-    - *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
 - **Initial Observation**: Identified data types and missing values.
 - **Initial Dataset**: 9,958 rows
+
+- *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
 
 ### Data Cleaning 🧹
 - **Missing Values**: Focused on columns 'votes' and 'rating'. Rows with missing values in these columns were dropped.
