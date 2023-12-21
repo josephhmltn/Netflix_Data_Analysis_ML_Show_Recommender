@@ -4,28 +4,21 @@
 
 ### Data Overview and Initial Exploration 🌟
 - **Dataset**: Contains Netflix titles with attributes like year, rating, duration, etc.
--- *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
+  - *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
 - **Initial Observation**: Identified data types and missing values.
 
 ### Data Cleaning 🧹
 - **Missing Values**: Focused on columns 'votes' and 'rating'. Rows with missing values in these columns were dropped.
---    Year: 527 missing.
-      Certificate: 3,453 missing.
-      Duration: 2,036 missing.
-      Genre: 73 missing.
-      Rating: 1,173 missing.
-      Votes: 1,173 missing.
-- **Result**: Ensured crucial data like ratings and votes were complete for reliable analysis.
-
-#### 🔧 Data Cleaning Insights
-Missing Values:
-
-    Year: 527 missing.
-    Certificate: 3,453 missing.
-    Duration: 2,036 missing.
-    Genre: 73 missing.
-    Rating: 1,173 missing.
-    Votes: 1,173 missing.
+  - **Year**: 527 missing.
+  - **Certificate**: 3,453 missing.
+  - **Duration**: 2,036 missing.
+  - **Genre**: 73 missing.
+  - **Rating**: 1,173 missing.
+  - **Votes**: 1,173 missing.
+- **Actions and Results**: Ensured crucial data like ratings and votes were complete for reliable analysis.
+  - **Handle Missing Values**: Decide on filling or dropping.
+  - **Convert Data Types**: Especially for Votes and Year.
+  - **Clean Year Field**: Extract correct year.
 
 ### Data Transformation 🔧
 - **Year Field**: Extracted the first year mentioned and converted it to a numeric format.
