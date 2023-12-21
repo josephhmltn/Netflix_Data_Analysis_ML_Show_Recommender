@@ -131,7 +131,7 @@ def recommend_titles_modified(title, cosine_sim=cosine_sim, df=netflix_data_clea
 - **Usage**: Finds the title's index, calculates similarity scores, and sorts similar titles.
 
 ### Function Testing and Validation 🔍
-- **Functionality**: Tested with titles like "Breaking Bad", "Brooklyn Nine-Nine", and "Mindhunter".
+- **Functionality**: Tested with titles like "Breaking Bad" and "Brooklyn Nine-Nine".
 - **Output**: Successfully generated lists of similar titles.
 
 ### Tests and Results 🧪
