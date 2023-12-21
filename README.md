@@ -1,14 +1,40 @@
 # Netflix Data Analysis
 
-## Data Overview and Initial Exploration 🌟
+## Dataset Processing for Analysis
+
+### Data Overview and Initial Exploration 🌟
 - **Dataset**: Contains Netflix titles with attributes like year, rating, duration, etc.
 -- *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
 - **Initial Observation**: Identified data types and missing values.
 
-## Data Cleaning and Transformation 🧼
-- **Year and Votes Fields**: Extracted year and converted votes to numeric.
-- **Dropped Missing Values**: Focused on rows with complete 'votes' and 'rating' data.
-- **Result**: Cleaned dataset ready for analysis.
+### Data Cleaning 🧹
+- **Missing Values**: Focused on columns 'votes' and 'rating'. Rows with missing values in these columns were dropped.
+--    Year: 527 missing.
+      Certificate: 3,453 missing.
+      Duration: 2,036 missing.
+      Genre: 73 missing.
+      Rating: 1,173 missing.
+      Votes: 1,173 missing.
+- **Result**: Ensured crucial data like ratings and votes were complete for reliable analysis.
+
+#### 🔧 Data Cleaning Insights
+Missing Values:
+
+    Year: 527 missing.
+    Certificate: 3,453 missing.
+    Duration: 2,036 missing.
+    Genre: 73 missing.
+    Rating: 1,173 missing.
+    Votes: 1,173 missing.
+
+### Data Transformation 🔧
+- **Year Field**: Extracted the first year mentioned and converted it to a numeric format.
+- **Votes Field**: Transformed from a string with commas to a numeric format for analysis.
+- **Consistency**: Achieved uniformity in data types for key columns.
+
+### Dataset After Cleaning and Transformation 🌟
+- **Refined Data**: The dataset now had cleaner and more consistent data, suitable for in-depth analysis.
+- **Structure**: Retained essential features with corrected data types and without missing values in critical columns.
 
 ## Exploratory Data Analysis (EDA) 🔍
 
