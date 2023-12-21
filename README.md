@@ -1,6 +1,6 @@
-# Netflix Data Analysis
+# Netflix Data Analysis 🎬
 
-## Dataset Processing for Analysis
+## Dataset Processing for Analysis 💼
 
 ### Data Overview and Initial Exploration 🌟
 - **Dataset**: Contains Netflix titles with attributes:
