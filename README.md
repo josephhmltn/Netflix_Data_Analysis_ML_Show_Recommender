@@ -1,8 +1,8 @@
-# Netflix Data Analysis 🎬
+# 🎬 Netflix Data Analysis
 
-## Dataset Processing for Analysis 💼
+## Dataset Processing for Analysis
 
-### Data Overview and Initial Exploration 🌟
+### 🌟 Data Overview and Initial Exploration
 - **Dataset**: Contains Netflix titles with attributes:
   - **Title**: Name of the show or movie.
   - **Year**: Release year or the range of years it was active.
@@ -18,7 +18,7 @@
 
 - *Datasource: [Kaggle](https://www.kaggle.com/datasets/narayan63/netflix-popular-movies-dataset)*
 
-### Data Cleaning 🧹
+### 🧹 Data Cleaning
 - **Missing Values**: Focused on columns 'votes' and 'rating'. Rows with missing values in these columns were dropped.
   - **Year**: 527 missing.
   - **Certificate**: 3,453 missing.
@@ -31,19 +31,19 @@
   - **Convert Data Types**: Especially for Votes and Year.
   - **Clean Year Field**: Extract correct year.
 
-### Data Transformation 🔧
+### 🔧 Data Transformation
 - **Year Field**: Extracted the first year mentioned and converted it to a numeric format.
 - **Votes Field**: Transformed from a string with commas to a numeric format for analysis.
 - **Consistency**: Achieved uniformity in data types for key columns.
 
-### Dataset After Cleaning and Transformation 🌟
+### ✨ Dataset After Cleaning and Transformation
 - **Refined Data**: The dataset now had cleaner and more consistent data, suitable for in-depth analysis.
 - **Structure**: Retained essential features with corrected data types and without missing values in critical columns.
 - **Resulting Dataset**: 8,784 rows
 
-## Exploratory Data Analysis (EDA) 🔍
+## 👀 Exploratory Data Analysis (EDA)
 
-### Distribution of Ratings - Snapshot 📊
+### 📊 Distribution of Ratings - Snapshot
 
 - **Central Tendency**: The distribution peaks around a rating of 7, suggesting a **high concentration of favorable ratings**.
 - **Skewness**: There is a slight **left skew** indicating more rare low ratings.
@@ -52,7 +52,7 @@
 
 ![](images/ratings_dist.png)
 
-### Top 10 Genres on Netflix - Popularity Analysis 📉
+### 📉 Top 10 Genres on Netflix - Popularity Analysis
 
 - **Leading Genre**: **Drama** dominates, with the highest count.
 - **Comedy Presence**: **Comedy** appears twice, suggesting possible categorization nuances.
@@ -61,7 +61,7 @@
 
 ![](images/genre_top10.png)
 
-### Genre Word Cloud for Content Analysis 🌐
+### 🌐 Genre Word Cloud for Content Analysis
 
 - **Prominent Genres**: **Drama**, **Comedy**, and **Action** stand out as the most frequent.
 - **Genre Variety**: Showcases a **wide array** of genres, indicating a **diverse content library**.
@@ -69,7 +69,7 @@
 
 ![](images/wordcloud_description.png)
 
-### Number of Releases per Year - Overview 📈
+### 📈 Number of Releases per Year - Overview
 
 - **Growth Trend**: Exponential increase in the number of releases over the years.
 - **Peak Activity**: A **sharp peak** is observed in the most recent year, highlighting a significant surge in releases.
@@ -78,7 +78,7 @@
 
 ![](images/releases_per_year.png)
 
-### Rating vs. Votes - Correlation Analysis 🔍
+### 🔍 Rating vs. Votes - Correlation Analysis
 
 - **Higher Ratings Concentration**: A **dense cluster** of votes around ratings of 6 to 8.
 - **Votes Spread**: Votes are **widely distributed** across ratings, with **diminishing frequency** towards both ends of the rating spectrum.
@@ -86,7 +86,7 @@
 
 ![](images/scatplot_ratings_votes.png)
 
-### Distribution of Content Duration - Quick Insights 🎞️
+### 🎞️ Distribution of Content Duration - Quick Insights
 
 - **Most Common Durations**: Concentrated **peaks around 100 and 200 minutes**.
 - **Short-Form Content**: High frequency of content **less than 100 minutes**, indicative of **short films or episodes**.
@@ -94,9 +94,9 @@
 
 ![](images/duration_dist_minutes.png)
 
-## Predictive Modeling: Recommendation System 🤖
+## 🤖 Predictive Modeling: Recommendation System
 
-### System Setup and Methodology 🛠️
+### 🛠️ System Setup and Methodology
 
 #### Feature Extraction and Similarity Measure
 - **Combined Features**: Merged 'genre' and 'description' into one text feature.
@@ -130,11 +130,11 @@ def recommend_titles_modified(title, cosine_sim=cosine_sim, df=netflix_data_clea
 - **Functionality**: Recommends similar titles based on input title.
 - **Usage**: Finds the title's index, calculates similarity scores, and sorts similar titles.
 
-### Function Testing and Validation 🔍
+### Function Testing and Validation
 - **Functionality**: Tested with titles like "Breaking Bad" and "Brooklyn Nine-Nine".
 - **Output**: Successfully generated lists of similar titles.
 
-### Tests and Results 🧪
+### 🧪 Tests and Results
 - **Test 1**: "Breaking Bad"
 ```python
 # Testing the recommendation function with "Breaking Bad"
@@ -180,17 +180,17 @@ Name: title, dtype: object
 ```
 ### Conclusion
 
-#### Overview of the Recommendation System 🌟
+#### 🌟 Overview of the Recommendation System
 
 The recommendation system developed for the Netflix dataset effectively utilizes content-based filtering techniques. By integrating features like genres and descriptions, the system provides personalized recommendations that align closely with user preferences and content similarity.
 
-#### Key Takeaways 🗝️
+#### 🗝️ Key Takeaways
 
 - **Effective Feature Utilization**: The combination of genre and description into a single feature vector proves to be efficient in capturing the essence of each title.
 - **TF-IDF and Cosine Similarity**: These methods successfully transformed and compared textual data to compute similarity scores, forming the backbone of the recommendation logic.
 - **Versatile Recommendations**: The system demonstrated its capability to suggest relevant titles across various genres, as seen in the test cases with "Breaking Bad" and "Brooklyn Nine-Nine".
 
-#### Future Enhancements 🔮
+#### 🔮 Future Enhancements
 
 - **Incorporate More Features**: Including director, cast, and user ratings could further refine the recommendations.
 - **User Feedback Integration**: Implementing a feedback loop to adjust recommendations based on user interactions.
